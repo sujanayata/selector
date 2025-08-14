@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinators</title>
+    <style>
+        .parent>h1{
+            color: rgb(227, 33, 33);
+        }
+        .child>h2{
+            color: yellow;
+        }
+        .parent>.child>h2{
+            background-color: cornflowerblue;
+        }
+        .parent1 h2{
+            font-size: 10px;
+        }
+        h1+h2{
+            color:rgb(233, 59, 140)
+        }
+        h1~h2,h3{
+            background-color: rgb(134, 237, 144);
+        }
+        .parent1>h2{
+            background-color: midnightblue;
+        }    
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <h1>Rose</h1>
+        <h2>Lilly</h2>
+        <div class="child">
+            <h2>Sunflower</h2>
+        </div>
+        <h3>Lotus</h3>
+        <h3>Hibiscus</h3>
+    </div >
+    <div class="parent1">
+        <h2>Jasmine</h2>       
+    </div>
+</body>
+</html>
